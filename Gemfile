@@ -39,6 +39,10 @@ group :production do
   gem 'pg'
 end
 
+group :test, :development do
+  gem "rspec-rails"
+end
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
