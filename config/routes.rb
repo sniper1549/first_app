@@ -1,9 +1,11 @@
 FirstApp::Application.routes.draw do
-  get "static_pages/home"
-  get "static_pages/help"
+  get "static_pages/home", :as => 'home'
+  get "static_pages/help", :as => 'help'
+  get "static_pages/contact", :as => 'contact'
   get "static_pages/about", :as => 'about'
 
   root :to => redirect("static_pages/home")
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
